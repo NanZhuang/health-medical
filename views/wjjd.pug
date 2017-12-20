@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .container
+    .row
+      each item in lists
+        .col-xs-4.col-sm-4.col-md-4.col-lg-4.text-center
+          a(href= item.href)
+            img(src= item.img, alt="")
+          h2.text-center= item.title
